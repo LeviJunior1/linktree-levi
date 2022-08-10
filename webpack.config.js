@@ -5,13 +5,30 @@ const TerserWebpackPlugin = require("terser-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const HtmlMinimizerPlugin = require("html-minimizer-webpack-plugin");
+const path = require("path");
 
 module.exports = {
   mode: modeDev ? "development" : "production",
-  entry: "./index.js",
+  entry: "./src/main.js",
   output: {
     filename: "main.js",
     path: __dirname + "/public",
+    assetModuleFilename: (pathData) => {
+      const filepath = path
+        .dirname(pathData.filename)
+        .split("/")
+        .slice(1)
+        .join("/");
+      return `${filepath}/[name][ext]`;
+    },
+  },
+  devServer: {
+    static: {
+      directory: "./public",
+    },
+    compress: true,
+    port: 9000,
+    hot: true,
   },
   optimization: {
     minimizer: [
@@ -34,13 +51,23 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader"],
         exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
+          },
+        },
+        test: /\.js$/,
+      },
+      {
+        exclude: /node_modules/,
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
+        test: /\.css$/,
       },
       {
         test: /\.(png|svg|jpg|jpe?g|gif)$/i,
-        use: ["file-loader"],
+        type: "asset/resource",
       },
     ],
   },

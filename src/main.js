@@ -1,3 +1,6 @@
+import "../src/main.css";
+import "../src/assets/me.jpeg";
+
 const socialNetworks = [
   {
     title: "Linkedin",
@@ -29,7 +32,7 @@ function createElement(socialNetworks = []) {
 }
 
 function listElement() {
-  for (social of socialNetworks) {
+  for (let social of socialNetworks) {
     createElement(social);
   }
 }
