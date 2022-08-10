@@ -53,8 +53,8 @@ $ npm run serve
 As seguintes ferramentas foram usadas na construção do projeto:
 
 - [Node.js](https://nodejs.org/en/)
-- [VueJS](https://vuejs.org/)
 - [VanillaJS](http://vanilla-js.com/)
+- [Webpack](https://webpack.js.org/)
 
 ## Autor
 
