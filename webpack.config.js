@@ -26,7 +26,6 @@ module.exports = {
     static: {
       directory: "./public",
     },
-    compress: true,
     port: 9000,
     hot: true,
   },

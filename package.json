@@ -1,7 +1,7 @@
 {
   "name": "linktree-levi",
-  "version": "1.0.0",
-  "description": "Redes Sociais",
+  "version": "1.0.1",
+  "description": "Redes Sociais - Linktree",
   "private": true,
   "scripts": {
     "start": "webpack serve",
@@ -13,7 +13,7 @@
   },
   "keywords": [],
   "author": "https://github.com/LeviJunior1",
-  "license": "ISC",
+  "license": "GPL-3.0",
   "devDependencies": {
     "@babel/core": "^7.18.10",
     "@babel/preset-env": "^7.18.10",

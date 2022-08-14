@@ -1,7 +1,7 @@
 import "../src/main.css";
 import "../src/assets/me.jpeg";
 
-const socialNetworks = [
+const socialMedia = [
   {
     title: "Linkedin",
     link: "https://www.linkedin.com/in/levi-junior-130719130/",
@@ -16,23 +16,23 @@ const socialNetworks = [
   },
 ];
 
-function createElement(socialNetworks = []) {
+function createElement(socialMedia = []) {
   let newDiv = document.createElement("div");
   newDiv.classList.add("social-network");
 
   let newLink = document.createElement("a");
-  newLink.href = socialNetworks.link;
+  newLink.href = socialMedia.link;
   newLink.target = "_blank";
-  newLink.textContent = socialNetworks.title;
+  newLink.textContent = socialMedia.title;
 
   newDiv.appendChild(newLink);
 
-  let main_element = document.querySelector("main");
-  main_element.appendChild(newDiv);
+  let mainElement = document.querySelector("main");
+  mainElement.appendChild(newDiv);
 }
 
 function listElement() {
-  for (let social of socialNetworks) {
+  for (let social of socialMedia) {
     createElement(social);
   }
 }
