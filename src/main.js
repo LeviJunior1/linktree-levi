@@ -16,19 +16,22 @@ const socialMedia = [
   },
 ];
 
-function createElement(socialMedia = []) {
-  let newDiv = document.createElement("div");
-  newDiv.classList.add("social-network");
-
+function createLink(media = {}) {
   let newLink = document.createElement("a");
-  newLink.href = socialMedia.link;
+  newLink.href = media.link;
   newLink.target = "_blank";
-  newLink.textContent = socialMedia.title;
+  newLink.textContent = media.title;
+  return newLink;
+}
 
-  newDiv.appendChild(newLink);
-
+function setLinkDOM(link) {
   let mainElement = document.querySelector("main");
-  mainElement.appendChild(newDiv);
+  mainElement.appendChild(link);
+}
+
+function createElement(socialMedia = {}) {
+  const link = createLink(socialMedia);
+  setLinkDOM(link);
 }
 
 function listElement() {

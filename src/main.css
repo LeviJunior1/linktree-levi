@@ -74,24 +74,24 @@ h1 {
   margin-bottom: 16px;
 }
 
-.social-network {
+a,
+a:hover,
+a:focus,
+a:active {
+  display: block;
+
+  text-decoration: none;
+  color: inherit;
+
   border: 1px solid var(--white);
   padding: 10px;
   margin-bottom: 1rem;
   border-radius: 30px;
   text-align: center;
+  word-wrap: break-word;
 }
 
-.social-network a,
-a:hover,
-a:focus,
-a:active {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-}
-
-.social-network:hover {
+a:hover {
   color: var(--color-purple-secodary);
   background-color: var(--white);
 }
