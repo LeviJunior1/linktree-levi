@@ -1,8 +1,6 @@
 @font-face {
   font-family: "RobotoMono";
   src: url("../src/assets/font/RobotoMono-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
 }
 
 :root {
@@ -25,16 +23,10 @@
 }
 
 html {
-  height: 100vh;
   font-size: var(--font-size-primary);
   background: var(--bg-color);
   color: var(--white);
   scroll-behavior: smooth;
-}
-
-body,
-main {
-  height: 100%;
 }
 
 footer {
@@ -61,7 +53,7 @@ picture {
   margin-bottom: 16px;
 }
 
-.myself-image {
+img {
   width: 96px;
   height: 96px;
   border-radius: 50%;
