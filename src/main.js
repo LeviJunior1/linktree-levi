@@ -34,10 +34,8 @@ function createElement(socialMedia = {}) {
   setLinkDOM(link);
 }
 
-function listElement() {
+(function () {
   for (let social of socialMedia) {
     createElement(social);
   }
-}
-
-listElement();
+})();
