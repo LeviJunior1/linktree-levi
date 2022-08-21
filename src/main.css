@@ -81,6 +81,7 @@ a:active {
   border-radius: 30px;
   text-align: center;
   word-wrap: break-word;
+  transition: 0.5s;
 }
 
 a:hover {
