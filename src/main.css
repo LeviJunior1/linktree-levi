@@ -35,15 +35,11 @@ footer {
 }
 
 .container {
-  padding-left: 20%;
-  padding-right: 20%;
-}
-
-@media (max-width: 1024px) {
-  .container {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
+  width: 100%;
+  max-width: 800px;
+  padding: 0 1em;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 picture {
@@ -66,25 +62,24 @@ h1 {
   margin-bottom: 16px;
 }
 
-a,
-a:hover,
-a:focus,
-a:active {
+a {
   display: block;
-
+  
   text-decoration: none;
   color: inherit;
-
+  
   border: 1px solid var(--white);
   padding: 10px;
   margin-bottom: 1rem;
   border-radius: 30px;
   text-align: center;
   word-wrap: break-word;
-  transition: 0.5s;
+  transition: 1s;
 }
 
-a:hover {
+a:hover,
+a:focus,
+a:active {
   color: var(--color-purple-secodary);
   background-color: var(--white);
 }
