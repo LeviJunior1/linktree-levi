@@ -14,9 +14,13 @@ const socialMedia = [
     title: "Instagram",
     link: "https://www.instagram.com/levijun1or/",
   },
+  {
+    title: "YouTube",
+    link: "https://www.youtube.com/channel/UCQ2G26Bg2To_jMGmc1q67wg",
+  }
 ];
 
-function createLink(media = {}) {
+function createLink(media) {
   let newLink = document.createElement("a");
   newLink.href = media.link;
   newLink.target = "_blank";
@@ -29,13 +33,9 @@ function setLinkDOM(link) {
   mainElement.appendChild(link);
 }
 
-function createElement(socialMedia = {}) {
+function createElement(socialMedia) {
   const link = createLink(socialMedia);
   setLinkDOM(link);
 }
 
-(function () {
-  for (let social of socialMedia) {
-    createElement(social);
-  }
-})();
+socialMedia.map(createElement)
