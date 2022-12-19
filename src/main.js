@@ -21,7 +21,7 @@ const socialMedia = [
 ];
 
 function createLink(media) {
-  let newLink = document.createElement("a");
+  const newLink = document.createElement("a");
   newLink.href = media.link;
   newLink.target = "_blank";
   newLink.textContent = media.title;
@@ -29,13 +29,10 @@ function createLink(media) {
 }
 
 function setLinkDOM(link) {
-  let mainElement = document.querySelector("main");
+  const mainElement = document.querySelector("main");
   mainElement.appendChild(link);
 }
 
-function createElement(socialMedia) {
-  const link = createLink(socialMedia);
-  setLinkDOM(link);
-}
-
-socialMedia.map(createElement)
+socialMedia
+  .map(createLink)
+  .map(setLinkDOM)
