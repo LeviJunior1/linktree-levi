@@ -4,32 +4,28 @@
 }
 
 :root {
-  --font-family-primary: "RobotoMono", sans-serif, Arial;
-  --font-size-primary: 1.2rem;
+  --font-family: "RobotoMono", sans-serif, Arial;
+  --font-size: 1.2rem;
   --white: #fff;
-  --color-purple-primary: #41295a;
-  --color-purple-secodary: #2f0743;
+  --color-black-primary: #232526;
+  --color-black-secodary: #414345;
   --bg-color: linear-gradient(
     to right,
-    var(--color-purple-primary),
-    var(--color-purple-secodary)
+    var(--color-black-primary),
+    var(--color-black-secodary)
   );
 }
 
 * {
-  font-family: var(--font-family-primary);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  scroll-behavior: smooth;
+  color: var(--white);
+  margin: 0;
 }
 
 html {
-  font-size: var(--font-size-primary);
   background: var(--bg-color);
-  color: var(--white);
-  scroll-behavior: smooth;
-}
-
-footer {
-  margin-top: 32px;
-  text-align: center;
 }
 
 .container {
@@ -43,8 +39,8 @@ footer {
 picture {
   display: flex;
   justify-content: center;
-  margin-top: 32px;
-  margin-bottom: 16px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 img {
@@ -57,7 +53,7 @@ h1 {
   font-size: 0.8rem;
   line-height: 1.5;
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 a {
@@ -67,15 +63,21 @@ a {
   color: inherit;
   
   border: 1px solid var(--white);
-  padding: 10px;
+  padding: 12px;
   margin-bottom: 1rem;
-  border-radius: 30px;
+  border-radius: 2rem;
   text-align: center;
   word-wrap: break-word;
   transition: 1s;
 }
 
 a:hover {
-  color: var(--color-purple-secodary);
+  color: var(--color-black-secodary);
   background-color: var(--white);
+}
+
+footer {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
