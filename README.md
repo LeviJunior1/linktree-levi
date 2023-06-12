@@ -19,6 +19,10 @@
 
 ## Demonstração da aplicação
 Acesse o site para ver a <a href=https://levijunior1.github.io/linktree-levi/ target="_blank">Demonstração</a> :heart_eyes:
+
+Como fazer (How to make) <a href=https://youtu.be/7gA0OxFrD8M target="_blank">Click Here</a> :heart:
+<br><br><br>
+
 <br><br><br>
 ![](https://github.com/LeviJunior1/linktree-levi/blob/master/images-gh/linktree-levi.png?raw=true)
 
