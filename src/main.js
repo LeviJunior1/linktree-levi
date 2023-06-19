@@ -3,6 +3,10 @@ import "../src/assets/me.jpeg";
 
 const socialMedia = [
   {
+    title: "Portifólio",
+    link: "https://www.levijunior.com/",
+  },
+  {
     title: "Linkedin",
     link: "https://www.linkedin.com/in/levi-junior-130719130/",
   },
