@@ -15,10 +15,6 @@ const socialMedia = [
     link: "https://github.com/LeviJunior1",
   },
   {
-    title: "Instagram",
-    link: "https://www.instagram.com/levijun1or/",
-  },
-  {
     title: "YouTube",
     link: "https://www.youtube.com/channel/UCQ2G26Bg2To_jMGmc1q67wg",
   }
